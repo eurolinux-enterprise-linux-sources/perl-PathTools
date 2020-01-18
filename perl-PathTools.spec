@@ -1,7 +1,7 @@
 %global cpan_version 3.40
 Name:           perl-PathTools
 Version:        %(echo '%{cpan_version}' | tr _ .)
-Release:        3%{?dist}
+Release:        5%{?dist}
 Summary:        PathTools Perl module (Cwd, File::Spec)
 License:        (GPL+ or Artistic) and BSD
 Group:          Development/Libraries
@@ -64,6 +64,12 @@ make test
 %{_mandir}/man3/*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 3.40-5
+- Mass rebuild 2014-01-24
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 3.40-4
+- Mass rebuild 2013-12-27
+
 * Fri Jul 12 2013 Petr Pisar <ppisar@redhat.com> - 3.40-3
 - Disable VMS test (bug #973713)
 
